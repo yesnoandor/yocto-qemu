@@ -7,9 +7,7 @@ TARGET=helloYocto
 CUR_SOURCE=${wildcard *.c}
 CUR_OBJS=${patsubst %.c, %.o, $(CUR_SOURCE)}
 
-#CFLAGS=-D_REENTRANT  -I$(PKG_CONFIG_SYSROOT_DIR)/usr/include/alsa-lib
-#CFLAGS1=-D_REENTRANT  -I$(PKG_CONFIG_SYSROOT_DIR)/usr/include/libmad
-#LDFLAGS= -lz
+
 
 # make all .c or .cpp 
 %.o: %.c
@@ -22,7 +20,7 @@ CUR_OBJS=${patsubst %.c, %.o, $(CUR_SOURCE)}
 
 all: $(TARGET)
 
-helloYocto: $(CUR_OBJS)
+$(TARGET): $(CUR_OBJS)
 	$(CC) $(LDFLAGS) *.o -o $@  
 
 #helloYocto: helloYocto.o
