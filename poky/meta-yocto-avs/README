@@ -1,5 +1,5 @@
 This README file contains information on the contents of the
-yocto-apps layer.
+meta-yocto-avs layer.
 
 Please see the corresponding sections below for details.
 
@@ -24,7 +24,7 @@ This layer depends on:
 Patches
 =======
 
-Please submit any patches against the yocto-apps layer to the
+Please submit any patches against the meta-yocto-avs layer to the
 xxxx mailing list (xxxx@zzzz.org) and cc: the maintainer:
 
 Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
@@ -33,32 +33,32 @@ Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
 Table of Contents
 =================
 
-  I. Adding the yocto-apps layer to your build
+  I. Adding the meta-yocto-avs layer to your build
  II. Misc
 
 
-I. Adding the yocto-apps layer to your build
+I. Adding the meta-yocto-avs layer to your build
 =================================================
 
---- replace with specific instructions for the yocto-apps layer ---
+--- replace with specific instructions for the meta-yocto-avs layer ---
 
 In order to use this layer, you need to make the build system aware of
 it.
 
-Assuming the yocto-apps layer exists at the top-level of your
+Assuming the meta-yocto-avs layer exists at the top-level of your
 yocto build tree, you can add it to the build system by adding the
-location of the yocto-apps layer to bblayers.conf, along with any
+location of the meta-yocto-avs layer to bblayers.conf, along with any
 other layers needed. e.g.:
 
   BBLAYERS ?= " \
     /path/to/yocto/meta \
     /path/to/yocto/meta-poky \
     /path/to/yocto/meta-yocto-bsp \
-    /path/to/yocto/meta-yocto-apps \
+    /path/to/yocto/meta-meta-yocto-avs \
     "
 
 
 II. Misc
 ========
 
---- replace with specific information about the yocto-apps layer ---
+--- replace with specific information about the meta-yocto-avs layer ---

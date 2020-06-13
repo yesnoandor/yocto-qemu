@@ -1,0 +1,31 @@
+--- /home/wenyu/server/ext-disk/grea/renesas-kingfisher/build/tmp/work-shared/h3ulcb/kernel-source/drivers/media/platform/vivid/vivid-core.c	2020-06-10 03:00:44.441339151 +0800
++++ ./drivers/media/platform/vivid/vivid-core.c	2020-06-13 10:06:13.743857498 +0800
+@@ -1531,6 +1531,8 @@
+ {
+ 	int ret;
+ 
++	printk(KERN_ERR "%s::++++++++++\r\n",__FUNCTION__);
++	
+ 	ret = platform_device_register(&vivid_pdev);
+ 	if (ret)
+ 		return ret;
+@@ -1539,13 +1541,19 @@
+ 	if (ret)
+ 		platform_device_unregister(&vivid_pdev);
+ 
++	printk(KERN_ERR "%s::----------\r\n",__FUNCTION__);
++
+ 	return ret;
+ }
+ 
+ static void __exit vivid_exit(void)
+ {
++	printk(KERN_ERR "%s::++++++++++\r\n",__FUNCTION__);
++	
+ 	platform_driver_unregister(&vivid_pdrv);
+ 	platform_device_unregister(&vivid_pdev);
++
++	printk(KERN_ERR "%s::----------\r\n",__FUNCTION__);
+ }
+ 
+ module_init(vivid_init);
