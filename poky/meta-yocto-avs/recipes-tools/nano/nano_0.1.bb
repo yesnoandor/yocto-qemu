@@ -51,7 +51,7 @@ addtask unpack
 #addtask configure before do_build after do_unpack
 
 do_configure() {
-	cd ${WORKDIR}/${P} && ./configure
+	cd ${WORKDIR}/${P} && ./configure -host=x86_64-unknown-linux-gnu
 }
 addtask configure 
 

@@ -6,7 +6,7 @@ int main()
 {
 	int fd;
 	int val = 0x55aaff00;
-	fd = open("/dev/simple_device", O_RDWR);
+	fd = open("/dev/simple_module_device", O_RDWR);
 	if(fd < 0){
 		printf("can't open!\n");
 	}

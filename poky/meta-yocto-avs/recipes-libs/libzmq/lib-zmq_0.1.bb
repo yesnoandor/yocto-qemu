@@ -20,7 +20,7 @@ FILES_${PN} += "${libdir}/*.so"
 FILES_SOLIBSDEV = ""
 
 do_configure() {
-	./configure
+	./configure -host=x86_64-unknown-linux-gnu
 }
 #addtask configure
 
